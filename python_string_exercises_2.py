@@ -125,7 +125,11 @@ print(ninezillion)
 
 # Exercise 21
 
-sentence="what,if,we,have,no,choice....?"
+sentence="what,if,we,have,no,choice?...."
 new_sentence=sentence.replace(","," ")
 new_sentence=new_sentence.replace(".","")
+print(new_sentence)
+
+sentence="what,if,we,have,no,choice?...."
+new_sentence=sentence.replace(","," ").rstrip(".")
 print(new_sentence)
