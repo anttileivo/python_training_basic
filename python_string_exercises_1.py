@@ -18,6 +18,7 @@ str1="abracadabra"
 #print(str2)
 
 print(str1[0:4]+","+str1[4: ])
+print(str1[:str1.find("cadabra")], str1[str1.find("cadabra"):])
 
 # Exercise 3 weird
 
@@ -37,6 +38,7 @@ print(len(str1))
 # Exercise 6
 str1="breathe"
 print(str1[0:6])
+print(str1[:-1])
 
 # Exercise 7
 str1="weight"
@@ -93,4 +95,8 @@ print(str(var)*3)
 str1="Another bad example, what a good day"
 str1 = str1.replace("bad", "good",1); str2 = str1.replace("good", "bad",1)
 print(str2)
+
+str1="Another bad example, what a good day"
+str1 = str1.replace("bad", "good").replace("good", "bad",1)
+print(str1)
 

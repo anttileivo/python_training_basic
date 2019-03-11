@@ -25,13 +25,22 @@ print(str1.index("on",9))
 # Exercise 4
 
 str1="Superficial"
-zs=str1.index("c")
-if zs == zs:
+zs=str1.find("z")
+if zs != -1:
     print("Index number of z is " + str(zs))
 else:
     print("z does not appear in this string")
 
 # Exercise 5
+
+sentence="There truly is a dazzling bright world out there, waiting for us to explore."
+print(sentence.rindex("a"))
+
+# Exercise 6
+
+sentence="There truly is a dazzling bright world out there, waiting for us to explore."
+print(sentence.index("a"))
+
 
 # Exercise 7
 #str1="91342391"
@@ -41,6 +50,18 @@ str1="91342391"
 str1=str1[4:8]
 print(str1)
 
+# Exercise 8
+str1="-== Warning! ==-"
+str1= str1.replace("-== ","")
+str1= str1.replace("! ==-","")
+print(str1)
+
+# Exercise 9
+
+str1="-== Error! ==-"
+str1= str1.replace("-== ","")
+str1= str1.replace("! ==-","")
+print(str1)
 
 # Exercise 11
 
